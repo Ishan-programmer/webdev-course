@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: visible;
+    background-color: #8EC5FC;
+    background-image:linear-gradient(62deg,#8EC5FC 0%,#E0C3FC 100%);
+}
+
+.navContainer{
+    width: 100%;
+    /* background-color: rgba(89, 89, 148, 0.612); */
+    background-color: #0f3c55;
+    background-image:linear-gradient(160deg,#0f3c55 0%, #5674d9 100%);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+}
+
+#navlist{
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navLogo{
+    font-size: 2rem;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+#navItems{
+    display: flex;
+    gap: 40px;
+}
+
+.contentBox{
+    width: 70%;
+    margin: 5px auto;
+    padding: 3rem;
+    /* border: 2px solid black; */
+    background-color: azure;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 0px 0px 30px black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox ul, .leftBox ol{
+    font-size: 1.2rem;
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s linear 0s;
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(130, 122, 122, 0.763);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.rightBox:hover .overlay{
+    opacity: 1;
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox img{
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    
+}
+
+.rightBox:hover{
+    transform: scale(1.1);
+}
+
+.footerBox{
+    color: azure;
+    min-height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}

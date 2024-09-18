@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+
+            background-color: aquamarine;
+            height: 330px;
+            width: var(--custom-width);
+            margin: 5px;padding: 5px;
+            border: 1px solid var(--primary-color);
+            box-shadow: 6px 5px 10px 4px #006bff87;
+        }
+        h2{
+            text-shadow: 2px 3px 1px red, 5px 5px 1px green, 7px 7px 1px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="maharana.jpeg" alt="" height="150px">
+            <h2>Welcome to Codehelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, at. Alias molestiae illum vitae labore quo atque voluptatibus perferendis odit. Quae, doloremque. Nobis, esse? Totam.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #346e92;
+    background-image: linear-gradient(135deg, #346e92 0%, #5c5c67 100%);
+}
+.card{
+    height: 65%;
+    width: 65%;
+    display: flex;
+    background-color: rgb(82, 4, 82);
+    justify-content: center;
+    color: white;
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 100%;
+    width: 50%;
+}
+.impressions{
+    display: flex;
+    justify-content: space-between;
+}
+.rightBox{
+    height: 100%;
+    width: 50%;
+}
+.rightBox img{
+    height: 100%;
+    width: 100%;
+}
